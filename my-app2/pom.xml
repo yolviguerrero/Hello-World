@@ -8,14 +8,16 @@
   <name>my-app2</name>
   <url>http://maven.apache.org</url>
   <build>
-		<plugin>
-		<artifactId>maven-war-plugin</artifactId>
-		<version>2.4</version>
+      <plugins>
+        <plugin>
+	<artifactId>maven-war-plugin</artifactId>
+	<version>2.4</version>
   	<configuration>
-			<warSourceDirectory>WebContent</warSourceDirectory>
-			<failOnMissingWebXml>false</failOnMissingWebXml>
-		</configuration>
-    </plugin>  
+          <warSourceDirectory>WebContent</warSourceDirectory>
+	  <failOnMissingWebXml>false</failOnMissingWebXml>
+	</configuration>
+     </plugin> 
+   </plugins>
   </build>
   <dependencies>
     <dependency>
